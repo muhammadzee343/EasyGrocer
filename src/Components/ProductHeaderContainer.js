@@ -11,15 +11,12 @@ import FavIcon from '../Assets/icons/FavIcon';
 import {button_backgroun, Dark, white} from '../Assets/themes/colors';
 import {FONT_KARLA} from '../Assets/themes/fonts';
 // import BoxHeading from './BoxHeading';
-import ProductCard from './ProductCard';
 import ProductCardBox from './ProductCardBox';
 import SquareButton from './SquareButton';
 import TextHeadingProduct from './TextHeadingProduct';
 
 export const ProductsHeadingContainer = props => {
-  //   console.log('data in header', props.productList);
   return (
-    // <ProductCardBox>
     <View style={{margin: 10}}>
       <View style={styles.headingContainer}>
         <TextHeadingProduct>{props.title}</TextHeadingProduct>

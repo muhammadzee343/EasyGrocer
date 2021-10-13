@@ -1,7 +1,7 @@
 import React from 'react';
 import Svg, {Path} from 'react-native-svg';
 
-const ShoppingListIcon = props => {
+const TrackOrderIcon = props => {
   return (
     <Svg height="25" width="25" viewBox="0 0 122.88 109.73">
       <Path
@@ -13,4 +13,4 @@ const ShoppingListIcon = props => {
   );
 };
 
-export default ShoppingListIcon;
+export default TrackOrderIcon;
