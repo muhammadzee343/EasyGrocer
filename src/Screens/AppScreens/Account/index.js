@@ -1,5 +1,5 @@
 import React from 'react';
-import {ScrollView, StyleSheet, Text, View} from 'react-native';
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import BackArrowIcon from '../../../Assets/icons/BackArrow';
 import CartIcon from '../../../Assets/icons/CartIcon';
 import LogoutIcon from '../../../Assets/icons/LogoutIcon';
@@ -8,7 +8,7 @@ import ProfileIcon from '../../../Assets/icons/ProfileIcon';
 import ShoppingListIcon from '../../../Assets/icons/ShoppingListIcon';
 import TrackOrderIcon from '../../../Assets/icons/TrackOrderIcon';
 import WalletIcon from '../../../Assets/icons/WalletIcon';
-import {button_backgroun, Dark} from '../../../Assets/themes/colors';
+import { button_backgroun, Dark } from '../../../Assets/themes/colors';
 import AccountCard from '../../../Components/AccountCard';
 import CustomHeader from '../../../Components/CustomHeader';
 const onWlletPress = () => {
@@ -19,7 +19,7 @@ const promotion_array = [
     id: 1,
     leftIcon: <WalletIcon iconColor={button_backgroun} />,
     title: 'Wallet',
-    onPress: {onWlletPress},
+    onPress: { onWlletPress },
   },
   {
     id: 2,
@@ -61,14 +61,14 @@ const promotion_array = [
 
 export default function Account() {
   return (
-    <View style={{flex: 1}}>
-      <View style={{flex: 0.1}}>
+    <View style={{ flex: 1 }}>
+      <View style={{ flex: 0.1 }}>
         <CustomHeader
           leftIcon={<BackArrowIcon iconColor={Dark} />}
           headerTitle="Accounts"
         />
       </View>
-      <ScrollView style={{flex: 0.9, backgroundColor: 'red'}}>
+      <ScrollView style={{ flex: 0.9 }}>
         {promotion_array.map((item, index) => {
           return (
             <View key={item.id}>
